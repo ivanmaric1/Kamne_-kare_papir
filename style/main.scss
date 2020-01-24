@@ -2,6 +2,7 @@
 
 $main-color: #a1dbe7;
 $secondary-color: #000000;
+$border-radius: 35px;
 
 
 html,body {
@@ -14,10 +15,10 @@ html,body {
 
     .container {
         width: 80%;
-        height: 70%;
+        height: 80%;
         border: 5px solid $secondary-color;
-        margin: 115px auto 0 auto;
-        border-radius: 25px;
+        margin: 90px auto 0 auto;
+        border-radius: $border-radius;
         background-color: white;
         display: flex;
     }
@@ -34,19 +35,18 @@ article {
     h1 {
         text-align: center;
         font-size: 2.1rem;
-        margin-top: 0;
     }
 
     section {
         p {
-            font-size: 1.4em;
+            font-size: 1.5em;
         }
 
         img {
             width: 50%;
             display: block;
             margin: 2rem auto;
-            border-radius: 25px;
+            border-radius: $border-radius;
         }
     }
 }
@@ -60,7 +60,6 @@ main {
         text-align: center;
         font-size: 2.1rem;
         margin-bottom: 0;
-        margin-top: 0;
     }
     p {
         text-align: center;
@@ -82,13 +81,35 @@ main {
     section.izbor {
         display: flex;
         justify-content: space-evenly;
-        margin-top: 5rem;
+        margin-top: 2rem;
 
         .btn {
-            display: inline-block;
             font-size: 2rem;
-            padding: 1rem;
             border-radius: 50%;
+            padding: 3rem;
+            background-color: $main-color;
+            box-shadow: 0px 0px 8px 3px $secondary-color;
+        }
+    }
+
+    section.izborRačunala {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 5rem;
+    }
+
+    section.rezultat {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 3rem;
+
+        .resetGumb {
+            background-color: $main-color;
+            padding: 1rem 2rem;
+            font-size: 1.5rem;
+            border-radius: $border-radius;
+            margin-right: 6rem;
+            
         }
     }
 }
