@@ -62,13 +62,6 @@ main h1 {
   text-align: center;
 }
 
-main span {
-  text-align: center;
-  margin-left: 2rem;
-  font-size: 1.2rem;
-  font-weight: lighter;
-}
-
 main p {
   font-size: 1.5rem;
   text-align: center;
@@ -87,7 +80,8 @@ main section.izbor {
 main section.izbor .btn {
   font-size: 1.7rem;
   border-radius: 50%;
-  padding: 2.5rem;
+  width: 120px;
+  height: 120px;
   background-color: #a1dbe7;
   -webkit-box-shadow: 0px 0px 8px 3px #000000;
           box-shadow: 0px 0px 8px 3px #000000;
@@ -107,7 +101,7 @@ main section.izborRačunala {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 2rem;
+  margin: 3.5rem 0px;
 }
 
 main section.izborRačunala p {
@@ -117,15 +111,12 @@ main section.izborRačunala p {
 main section.izborRačunala #outputRačunalo {
   font-size: 1.7rem;
   border-radius: 50%;
-  padding: 2rem;
+  width: 120px;
+  height: 120px;
   background-color: #a1dbe7;
   -webkit-box-shadow: 0px 0px 8px 3px #000000;
           box-shadow: 0px 0px 8px 3px #000000;
   margin: 0px 0px 0px 2rem;
-}
-
-main section.rezultat div#objašnjenjeRezultata {
-  height: 80px;
 }
 
 main section.score {
@@ -138,11 +129,19 @@ main section.score {
   font-size: 1.7rem;
 }
 
+main section.score #scoreIgrač, main section.score #scoreRačunalo {
+  width: 50px;
+}
+
 main section.score table td {
   border: 1px solid #000000;
 }
 
-main section.score button.resetGumb {
+main section.score table p {
+  margin: 0;
+}
+
+main section.score button#resetGumb {
   background-color: white;
   color: red;
   border: 1px solid #000000;
@@ -150,9 +149,17 @@ main section.score button.resetGumb {
   font-size: 1.7rem;
 }
 
-main section.score button.resetGumb:hover {
+main section.score button#resetGumb:hover {
   background-color: red;
   color: white;
-  border: 1px solid red;
+  border: 1px solid white;
+}
+
+main section.rezultat div#objašnjenjeRezultata {
+  height: 140px;
+}
+
+main section.rezultat div#objašnjenjeRezultata p {
+  font-size: 1.9rem;
 }
 /*# sourceMappingURL=main.css.map */
