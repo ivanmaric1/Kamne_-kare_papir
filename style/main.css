@@ -57,15 +57,75 @@ main {
 }
 
 main h1 {
-  text-align: center;
   font-size: 2.1rem;
   margin-bottom: 0;
+  text-align: center;
+}
+
+main span {
+  text-align: center;
+  margin-left: 2rem;
+  font-size: 1.2rem;
+  font-weight: lighter;
 }
 
 main p {
+  font-size: 1.5rem;
   text-align: center;
-  margin-top: 7px;
-  font-size: 1.4rem;
+}
+
+main section.izbor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 2rem;
+}
+
+main section.izbor .btn {
+  font-size: 1.7rem;
+  border-radius: 50%;
+  padding: 2.5rem;
+  background-color: #a1dbe7;
+  -webkit-box-shadow: 0px 0px 8px 3px #000000;
+          box-shadow: 0px 0px 8px 3px #000000;
+}
+
+main section.izbor .btn:hover {
+  background-color: #31a6be;
+}
+
+main section.izborRačunala {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2rem;
+}
+
+main section.izborRačunala p {
+  font-size: 1.5rem;
+}
+
+main section.izborRačunala #outputRačunalo {
+  font-size: 1.7rem;
+  border-radius: 50%;
+  padding: 2rem;
+  background-color: #a1dbe7;
+  -webkit-box-shadow: 0px 0px 8px 3px #000000;
+          box-shadow: 0px 0px 8px 3px #000000;
+  margin: 0px 0px 0px 2rem;
+}
+
+main section.rezultat div#objašnjenjeRezultata {
+  height: 80px;
 }
 
 main section.score {
@@ -82,50 +142,17 @@ main section.score table td {
   border: 1px solid #000000;
 }
 
-main section.izbor {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  margin-top: 2rem;
+main section.score button.resetGumb {
+  background-color: white;
+  color: red;
+  border: 1px solid #000000;
+  font-family: 'Arima Madurai', cursive;
+  font-size: 1.7rem;
 }
 
-main section.izbor .btn {
-  font-size: 2rem;
-  border-radius: 50%;
-  padding: 3rem;
-  background-color: #a1dbe7;
-  -webkit-box-shadow: 0px 0px 8px 3px #000000;
-          box-shadow: 0px 0px 8px 3px #000000;
-}
-
-main section.izborRačunala {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  margin-top: 5rem;
-}
-
-main section.rezultat {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 3rem;
-}
-
-main section.rezultat .resetGumb {
-  background-color: #a1dbe7;
-  padding: 1rem 2rem;
-  font-size: 1.5rem;
-  border-radius: 35px;
-  margin-right: 6rem;
+main section.score button.resetGumb:hover {
+  background-color: red;
+  color: white;
+  border: 1px solid red;
 }
 /*# sourceMappingURL=main.css.map */

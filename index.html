@@ -17,8 +17,20 @@
             </section>
         </article>
         <main>
-            <h1>Zaigraj protiv računala!</h1>
-            <p>(igra se do tri dobivene partije!)</p>
+            <h1>Zaigraj protiv računala!<span>(igra se do tri dobivene partije!)</span></h1>
+            <p>Odaberi svoj potez :</p>
+            <section class='izbor'>
+                <button id='kamen' class='btn'>Kamen</button>
+                <button id='škare' class='btn'>Škare</button>
+                <button id='papir' class='btn'>Papir</button>
+            </section>
+            <section class='izborRačunala'>
+                <p>Računalo je izabralo : </p>
+                <button id='outputRačunalo' class='btn'>&#9757&#9757</button>
+            </section>
+            <section class='rezultat'>
+                <div id='objašnjenjeRezultata'></div>
+            </section>
             <section class='score'>
                 <table>
                     <tr>
@@ -32,21 +44,11 @@
                         <td id='scoreRačunalo'>-0-</td>
                     </tr>
                 </table>
-            </section>
-            <section class='izbor'>
-                <button id='kamen' class='btn'>Kamen</button>
-                <button id='škare' class='btn'>Škare</button>
-                <button id='papir' class='btn'>Papir</button>
-            </section>
-            <section class='izborRačunala'>
-                <p>Računalo je izabralo : </p>
-                <div id='outputRačunalo'></div>
-            </section>
-            <section class='rezultat'>
-                <div id='objašnjenjeRezultata'></div>
                 <button type="reset" class='resetGumb'>Zaigraj opet</button>
             </section>
         </main>
     </div>
+
+<script src='program.js'></script>
 </body>
 </html>

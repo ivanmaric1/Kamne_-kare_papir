@@ -57,14 +57,65 @@ main {
     margin: auto;
 
     h1 {
-        text-align: center;
         font-size: 2.1rem;
         margin-bottom: 0;
-    }
-    p {
         text-align: center;
-        margin-top: 7px;
-        font-size: 1.4rem;
+    }
+
+    span {
+        text-align: center;
+        margin-left: 2rem;
+        font-size: 1.2rem;
+        font-weight: lighter;
+    }
+
+    p {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    section.izbor {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 2rem;
+
+        .btn {
+            font-size: 1.7rem;
+            border-radius: 50%;
+            padding: 2.5rem;
+            background-color: $main-color;
+            box-shadow: 0px 0px 8px 3px $secondary-color;
+        }
+
+        .btn:hover {
+            background-color: darken($main-color,30%);
+        }
+    }
+
+    section.izborRačunala {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+
+        p {
+            font-size: 1.5rem;
+        }
+
+        #outputRačunalo {
+            font-size: 1.7rem;
+            border-radius: 50%;
+            padding: 2rem;
+            background-color: $main-color;
+            box-shadow: 0px 0px 8px 3px $secondary-color;
+            margin: 0px 0px 0px 2rem;
+        }
+    }
+
+    section.rezultat {
+        div#objašnjenjeRezultata {
+            height: 80px;
+        }
     }
 
     section.score {
@@ -76,40 +127,21 @@ main {
             border: 1px solid $secondary-color;
         }
 
-    }
-
-    section.izbor {
-        display: flex;
-        justify-content: space-evenly;
-        margin-top: 2rem;
-
-        .btn {
-            font-size: 2rem;
-            border-radius: 50%;
-            padding: 3rem;
-            background-color: $main-color;
-            box-shadow: 0px 0px 8px 3px $secondary-color;
+        button.resetGumb {
+            background-color: white;
+            color: red;
+            border: 1px solid $secondary-color;
+            font-family: 'Arima Madurai', cursive;
+            font-size: 1.7rem;
         }
-    }
 
-    section.izborRačunala {
-        display: flex;
-        justify-content: space-evenly;
-        margin-top: 5rem;
-    }
-
-    section.rezultat {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 3rem;
-
-        .resetGumb {
-            background-color: $main-color;
-            padding: 1rem 2rem;
-            font-size: 1.5rem;
-            border-radius: $border-radius;
-            margin-right: 6rem;
-            
+        button.resetGumb:hover {
+            background-color: red;
+            color: white;
+            border: 1px solid red;
         }
+
     }
+
+    
 }
